@@ -1,0 +1,11 @@
+form {
+	border:1px solid gray;
+	padding:10px;
+}
+input {
+	padding:5px;
+	height : 10px;
+	border : 1px solid gray;
+}
+
+

@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+	font-family:"Alegreya SC", serif;
+}
+li.question {
+	background-color:black;
+	color:white;
+	display:block;
+}
+ul {
+	list-style-type:none;
+}
+ul.sidebar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #105E92;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a.sidebarlink {
+    display: block;
+    color: #000;
+    padding: 25px 0px 25px 0px;
+    text-decoration: none;
+	font-size:20px;
+}
+
+li a.sidebarlink.active {
+    background-color: #0F3955;
+    color: white;
+}
+/*
+li:hover:not(.active) {
+    background-color: #5CA9DC;
+    color: white;
+} */
+#sidebarlist:hover:not(.active) {
+	background-color: #5CA9DC;
+    color: white;
+}	
+button {
+	display:inline-block;
+	background-color:#0F3955;
+}
+/*
+table, td {
+    border: 1px solid black;
+	font-family: arial, sans-serif;
+    border-collapse: collapse;
+    text-align:left;
+    padding:15px;
+}
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align:center;
+    padding:15px;
+}
+
+table tr:nth-child(even):hover {
+    background-color: rgb(4,0,0);
+    color:white;
+}
+table tr:nth-child(odd):hover {
+   background-color: rgb(4,0,0);
+   color:white;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+   background-color: #fff;
+}
+table th {
+    background-color:rgb(4,0,0);
+    color: white;
+}
+*/

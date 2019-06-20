@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/loginsheet">
+	<link rel="stylesheet" href="/indexsheet">
+	<link rel="stylesheet" href="/formsheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">	 
+	<script src="/loginscript"></script>
+</head>
+<body>
+	<center>
+		<ul class="sidebar">
+				<a href='/'><img src="/logo" width="200px" height="200px" style="padding:30px;"><img></a>
+				<li id="sidebarlist"><a class="active sidebarlink" href="#">HOME</a></li>
+				<li id="sidebarlist"><a href="/events" class="sidebarlink">EVENTS</a></li>
+				<li id="sidebarlist"><a href="#" class="sidebarlink" onclick="document.getElementById('id01').style.display='block'">LOGIN</a></li>
+				<li id="sidebarlist"><a href="#" class="sidebarlink" onclick="document.getElementById('id02').style.display='block'" >REGISTER</a></li>
+		</ul>
+		<div style="margin-left:25%;padding:1px 16px;">
+				<h1> GEEKSCOOP X9 </h1>
+
+				<div id="id01" class="modal">
+	  
+					<form method="POST" action="/login" class="modal-content animate" >
+
+						<div class="container">
+							<label for="roll_number"><b>Roll number</b></label>
+							<input type="text" placeholder="Enter Roll number" name="roll_number" id="roll_number" required>
+
+							<label for="pass"><b>Password</b></label>
+							<input type="password" placeholder="Enter Password" name="pass" id="pass" required>
+				
+							<button type="button" id="loginbutton" onclick="login()">Login</button>
+						</div>
+						
+						<div class="container" style="background-color:#f1f1f1">
+							<center><button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button></center>
+							<!--<span class="psw">Forgot <a href="#">password?</a></span>-->
+						</div>
+					</form>
+				</div>
+				<div id="id02" class="modal1">
+	  
+					<form class="modal-content1 animate" >
+
+						<div class="container">
+							<label for="roll_number"><b>Roll number</b></label>
+							<input type="text" placeholder="Enter Roll number" name="roll_number" id="roll_number1" required>
+
+							<label for="name"><b>Name</b></label>
+							<input type="text" placeholder="Enter your name" name="name" id="name" required>
+							
+							<label for="email"><b>Email</b></label>
+							<input type="text" placeholder="Enter your email" name="email" id="email" required>
+							
+							<label for="contact"><b>Contact</b></label>
+							<input type="text" placeholder="Enter your contact number" name="contact" id="contact" required>
+							
+							<label for="year"><b>Year</b></label> <br/>
+							<select name="year" id="year" required class="selectbox">
+								<option value="" style="font-size:15px;">Select your year</option>
+								<option value="second" style="font-size:15px;">Second</option>
+								<option value="third" style="font-size:15px;">Third</option>
+								<option value="fourth" style="font-size:15px;">Fourth</option>
+							</select>
+							<br/>
+							
+							<label for="pass"><b>Password</b></label>
+							<input type="password" placeholder="Enter Password" name="pass" id="pass1" required>
+				
+							<button type="button" id="registerbutton" onclick="register()" >Register</button>
+						</div>
+						
+						<div class="container" style="background-color:#f1f1f1">
+							<center><button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button></center>
+						</div>
+					</form>
+				</div>
+				
+		</div>
+	</center>
+</body>
+</html>
