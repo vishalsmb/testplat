@@ -1,7 +1,7 @@
 var express = require('express');
 var fs = require('fs');
 var mysql = require('mysql');
-
+var port =  process.env.PORT || 80;
 var login = require('./login');
 var register = require('./register');
 var template = require('./template');
@@ -105,7 +105,7 @@ app.post('/saveresponse',function(req,res){
 	res.send('done');
 });
 
-app.listen(3000,function(){
+app.listen(port,function(){
 	console.log("Server listening on port 3000");
 });
 
