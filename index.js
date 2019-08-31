@@ -64,13 +64,13 @@ app.get('/logout',function(req,res){
 	}
 });
 
-app.get('/logo',function(req,res){
-	fs.readFile("geekscoop logo transparent.png",function(err,data){
-		res.set('Content-Type','image/png');
-		res.write(data);
-		res.end();
-	});
-});
+// app.get('/logo',function(req,res){
+// 	fs.readFile("geekscoop logo transparent.png",function(err,data){
+// 		res.set('Content-Type','image/png');
+// 		res.write(data);
+// 		res.end();
+// 	});
+// });
 
 app.get('/loginsheet',function(req,res){
 	fs.readFile("views/login.css",function(err,data){
